@@ -1503,7 +1503,7 @@ section img{
 .nav-header{
     height: 123px;
     position: absolute;
-    top: 0px;
+    top: 45px;
     width: 100%;
     display: flex;
     justify-content: space-between;
