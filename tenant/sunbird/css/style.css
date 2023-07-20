@@ -999,3 +999,9 @@ bottom: 20px;
     border: none;
     border-bottom: solid 1px #000;
 }
+.br-10{
+    border-radius: 10%;
+}
+.br-3{
+    border-radius: 3%;
+}
