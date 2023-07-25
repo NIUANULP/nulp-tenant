@@ -353,14 +353,14 @@
     <script>
         $(document).ready(function() {
             // Trigger Button Click on Enter
-            $('#site-search').on("keypress", function(event) {
-            if (event.key === "Enter") {
-                event.preventDefault();
-                $("#site-search-btn").click();
-            }
+            $('#site-search').on("keypress", function (event) {
+                if (event.key === "Enter") {
+                    event.preventDefault();
+                    $("#site-search-btn").click();
+                }
             });
 
-            $("#site-search-btn").click(function() {
+            $("#site-search-btn").click(function () {
                 if ($("#site-search").val().trim() != '') {
                     location.href = "/explore-course/1?key=" + $("#site-search").val().trim();
                 }
