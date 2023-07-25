@@ -207,9 +207,9 @@ header{
         font-size: 9px;
         text-align: center;
     }
-    .deadline-box {
+    /* .deadline-box {
         position: absolute;
-    }
+    } */
 }
 
 @media(min-width:768px){
@@ -392,7 +392,7 @@ header{
     .sb-baner {
         /* padding: 548px 0 750px 110px !important; */
         height: 659px;
-        margin-top: 106px
+        margin-top: 195px
     }
     /* .sb-baner h2{
         font-size: 4.4rem;
@@ -577,7 +577,7 @@ header{
     }
     .sb-baner {
         height: 614px;
-        margin-top: 124px;
+        margin-top: 230px;
     }
     /* .sb-search-btn{
         position: absolute;
@@ -2487,4 +2487,10 @@ section img{
     100% {
         opacity: 0;
     }
+}
+.px-0{
+    padding: 10px 0 !important;
+}
+.pt-35{
+    padding-top: 35px !important;
 }
