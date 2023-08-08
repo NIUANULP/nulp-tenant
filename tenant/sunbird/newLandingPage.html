@@ -697,7 +697,6 @@
         </div>
     </footer>
 
-
     <!-- Counter -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
@@ -831,6 +830,54 @@
             ]
         });
 
+        $('.slick-slide-show-discussion').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            draggable: true,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: false,
+                        arrows: true,
+                    }
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: false,
+                        arrows: true,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: true,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: true,
+                        arrows: false
+                    }
+                }
+            ]
+        });
+
+
         $('.slick-slide-show-domain').slick({
             infinite: true,
             slidesToShow: 3,
@@ -889,52 +936,6 @@
         });
 
 
-        $('.slick-slide-show-discussion').slick({
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            draggable: true,
-            responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
-                        infinite: true,
-                        dots: false,
-                        arrows: true,
-                    }
-                },
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
-                        infinite: true,
-                        dots: false,
-                        arrows: true,
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        dots: true,
-                        arrows: false
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        dots: true,
-                        arrows: false
-                    }
-                }
-            ]
-        });
 
         $('.slick-slide-show-gallery').slick({
             infinite: true,
@@ -1031,6 +1032,8 @@
         });
     </script>
 
+
+
     <script>
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
@@ -1058,7 +1061,8 @@
                             "primaryCategory": ["Course"],
                             "status": ["Live"],
                             "batches.enrollmentType": "open",
-                            "batches.status": [ 1 ]
+                            "batches.status": [ 1 ],
+                            "identifier":["do_1136238957658849281684","do_11370455974296780811593","do_11368467752313651211112","do_1136598919702609921643","do_1136640578114273281833","do_1136550347906744321351","do_1136550052517314561308","do_1136587508229734401555","do_1133739238734151681829","do_1135842468419502081641"]
                         },
                         "fields": [
 
@@ -1093,10 +1097,10 @@
                                                 </a>
                                                 <input type="hidden" value=${value.identifier} />
                                                 <div class="d-flex fw-bold pt-lg-5 mt-4 justify-content-end px-15">
-                                                    &nbsp;
+                                                    ${value.se_boards[0]}
                                                 </div>
                                                 <div class="px-15 pb-3">
-                                                    <div class="fw-bold truncate header py-15" title=${value.name}>${value.name}>${_.capitalize(value.name)}</div>
+                                                    <div class="fw-bold truncate header py-15" title="${value.name}">${_.capitalize(value.name)}</div>
                                                     <div class="truncate">${value.organisation[0]}</div>
                                                     <!--div>Tags/ Keywords</div-->
                                                 </div>
@@ -1195,6 +1199,9 @@
 
         typeWriter2();
     </script>
+
+
+
 
 
 </body>
