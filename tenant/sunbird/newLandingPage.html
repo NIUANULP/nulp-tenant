@@ -191,10 +191,10 @@
 
                             <div class="input-group my-3 search nulp-search rounded-pill">
                                 <span class="input-group-text border-0  bg-transparent" id="basic-addon1">
-                                    <button id="site-search-btn" class="searchIcon fs-2"><i class="fa fa-search"
+                                    <button id="search-button-1" class="searchIcon fs-2"><i class="fa fa-search"
                                             aria-hidden="true"></i></button>
                                 </span>
-                                <input id="site-search" name="q" autocomplete="off" type="search"
+                                <input id="search-field-1" name="q" autocomplete="off" type="search"
                                     class="form-control nulp-search-Content bg-transparent border-0 border-bottom  border-dark"
                                     placeholder="How NULP works" aria-label="Username" aria-describedby="basic-addon1">
                             </div>
@@ -777,6 +777,20 @@
             });
         });
 
+        $(document).ready(function () {
+                $('#search-field-1').on("keypress", function (event) {
+                    if (event.key === "Enter") {
+                        event.preventDefault();
+                        $("#search-button-1").click();
+                    }
+                });
+
+                $("#search-button-1").click(function () {
+                    if ($("#search-field-1").val().trim() != '') {
+                        location.href = "/explore-course/1?key=" + $("#search-field-1").val().trim();
+                    }
+                });
+            });
         // national urban learning platform slide
         $("#owl-demo").owlCarousel({
             navigation: false,
