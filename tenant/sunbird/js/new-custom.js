@@ -1,23 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-	function counter(id, start, end, duration) {
-		let obj = document.getElementById(id),
-			current = start,
-			range = end - start,
-			increment = end > start ? 1 : -1,
-			step = Math.abs(Math.floor(duration / range)),
-			timer = setInterval(() => {
-				current += increment;
-				obj.textContent = current;
-				if (current == end) {
-					clearInterval(timer);
-				}
-			}, step);
-	}
-	counter("count1", 0, 10, 3000);
-	counter("count2", 100, 449, 3500);
-	counter("count3", 106000, 106421, 3500);
-});
-
 $(document).ready(function () {
 	// Trigger Button Click on Enter
 	$('#site-search').on("keypress", function (event) {
@@ -65,6 +45,7 @@ $('#testimonial-carousel').owlCarousel({
 		}
 	}
 })
+
 
 $('.slick-slide-show').slick({
 	infinite: true,
@@ -215,6 +196,7 @@ $('.slick-slide-show-domain').slick({
 	]
 });
 
+
 $(document).ready(function(){
 	$(".owl-carousel").owlCarousel({
 		loop:true,
@@ -234,8 +216,7 @@ $(document).ready(function(){
 			1000:{
 				items:3,
 				nav:true,
-				loop:false,
-				dots:false
+				loop:false
 			}
 		}
 		})
@@ -356,7 +337,7 @@ $(function () {
 							<div style="justify-content: center" class="d-flex">
 								<div class="ui card p-0">
 									<div class="bg-img-cover">
-										<img src="images/abstract.svg" class="card-bg" alt="abstract" />
+										<img src="images/abstract.svg" class="card-bg" />
 									</div>
 									<div class="small-bow">
 										<a class="slider_info" href="#">
@@ -434,6 +415,7 @@ $(function () {
 		}
 	})
 })
+
 
 let title = document.querySelector('.firstWord');
 let name = "Learning";
