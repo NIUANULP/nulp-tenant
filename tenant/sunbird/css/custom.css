@@ -2965,11 +2965,7 @@ section img {
     color: #b60000;
     width: 100%;
     padding: 6px 10px;
-    position: fixed;
+    position: absolute;
     top: 0;
     overflow: hidden;
-}
-
-.mt-22px{
-    margin-top: 22px !important;
 }
