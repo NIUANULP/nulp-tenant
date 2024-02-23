@@ -1838,9 +1838,11 @@ ul {
     text-align: center;
     box-shadow: 0px 11px 5px 0 #1b1c1d63 !important;
     border: none;
-    font-weight: 300 !important;
+    font-weight: 300 ;
 }
 
 .clickHere-BannerButton:hover {
     color: #C24847 !important;
+    background-color: #e9d2d2;
+    font-weight: 500;
 }
