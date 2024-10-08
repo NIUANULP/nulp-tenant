@@ -610,6 +610,12 @@ header {
       .w-80{
         width: 100% !important;
       }
+    .padding-50{
+        padding:0px !important;
+      }
+      .w-80{
+        width: 100% !important;
+      }
 
     .sb-search-btn input {
         padding: 13px 0 0 17px;
