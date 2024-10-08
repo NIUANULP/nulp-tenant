@@ -2914,7 +2914,10 @@ section img {
     padding: 10px 0;
     color:#011F5B;
 }
-
+.homepage .identive-theme {
+    padding: 10px 0;
+    color:#fff;
+}
 .dropdown .icon {
     display: none !important;
 }
@@ -2923,6 +2926,11 @@ section img {
     position: absolute;
 }
 
+
+.cenrre1 .icon1 {
+    position: absolute;
+    fill: #fff !important;
+}
 .cenrre .icon2 {
     position: absolute;
 }
@@ -2933,6 +2941,11 @@ section img {
     color: #fff !important;
 }
 
+
+.homepage .identive-theme {
+    padding: 10px 0;
+    color:#fff;
+}
 .ui.menu .ui.dropdown .menu>.item:hover {
     background:#009499 !important;
     color: #fff !important;
