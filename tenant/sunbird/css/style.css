@@ -857,6 +857,15 @@ body {
     height: 522px;
 }
 
+.sky-blue-bg {
+    padding-bottom: 40px;
+    background-color: #0097b4c2 !important;
+    padding-top: 48px;
+    height: 522px;
+}
+
+
+
 .bggender-photo img {
     right: -15px !important;
 }
@@ -909,6 +918,10 @@ body {
 
 .bgThird-photo img {
     right: -35px !important;
+}
+
+.bgFirst-photo img {
+    right: -20px !important;
 }
 
 .s-head {
