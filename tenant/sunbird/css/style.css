@@ -239,7 +239,8 @@ body {
 @media (min-width:1400px) {
     .navItems a {
         font-size: 1rem;
-        padding: 0 22px;
+        padding: 0 20px;
+
     }
 }
 
