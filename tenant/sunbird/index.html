@@ -67,7 +67,7 @@
 <body>
     <script>
         // Define the API endpoint and headers
-        const apiUrl = 'https://devnulp.niua.org/get/users';
+        const apiUrl = '/get/users';
         const headers = {
           'Accept': '*/*',
           'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8',
@@ -117,15 +117,15 @@
           console.error('There was a problem with the fetch operation:', error);
         });
       </script>
-    <div class="maintainence-msg">
+    <!-- <div class="maintainence-msg">
         <marquee behavior="" direction="">
             You are currently viewing the version of NULP 4.0. Since the deployments have been recently completed you
             might face some difficulties.
         </marquee>
-    </div>
+    </div> -->
     <section>
-        <nav class="navbar bg-white mt-45px">
-            <div class="p-0 col-12 col-md-5 col-lg-5 ps-lg-3">
+        <nav class="navbar bg-white">
+            <div class="p-0 col-12 col-md-4 col-lg-4">
                 <div
                     class="d-flex justify-content-between align-items-center justify-content-lg-start gap-2 col-12 ps-3 ps-lg-5 pe-3 pe-lg-5">
                     <div class="nav_img">
@@ -149,12 +149,22 @@
                     </div>
                 </div>
             </div>
-            <div class="pe-1 d-none navItems d-lg-flex col-8 col-lg-7 align-items-center justify-content-evenly">
+            <div class="pe-1 d-none navItems d-lg-flex col-8 col-lg-8 align-items-center justify-content-evenly">
                 <div class="sb-search-btn">
                     <button id="site-search-btn" class="searchIcon" role="button" aria-pressed="true"><i
                             class="fa fa-search" aria-hidden="true"></i></button>
                     <input class="IconSearch" type="search" id="site-search" name="q" autocomplete="off"
                         aria-label="Search through site content" placeholder="Explore Content">
+
+                </div>
+                <div>
+                    <a href="/learnathon.html" target="_blank">
+                        <button type="button" role="button" aria-pressed="true" class="btn btn-warning fs-5"
+                            style="padding: 10px 20px; background: #FFCE6D; border-radius: 50px; font-size: 18px !important;">
+                            Learnathon 2.0
+                        </button>
+                    </a>
+
 
                 </div>
                 <a class="text-dark" href="#" aria-label="Home menu">Home</a>
@@ -195,9 +205,42 @@
                     </div>
                 </div>
             </div>
+            <div class="menu d-flex col-12 col-md-6 justify-content-between ps-3 pe-3 d-lg-none">
+
+                <div>
+                    <a href="/learnathon.html" target="_blank">
+                        <button type="button" role="button" aria-pressed="true" class="btn btn-warning fs-5" style="    padding: 8px 55px;
+                        background: #FFCE6D;
+                        border-radius: 50px;
+                        font-size: 18px !important;
+                        ">
+                            Learnathon 2.0
+                        </button>
+                    </a>
+                </div>
+
+                <a href="#" aria-label="Home menu"><i data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                        class="bi bi-list text-dark"></i></a>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-body navItems-menu align-items-baseline d-flex justify-content-between">
+                        <div>
+                            <a class="text-dark" href="#" aria-label="Home menu">Home</a>
+                            <a class="text-dark" href="#" aria-label="About us menu">About Us</a>
+                            <a class="text-dark" href="#galleryBx" aria-label="Gallery menu">Gallery</a>
+                            <a class="text-dark" href="mailto:nulp@niua.org" aria-label="Contact us menu">Contact Us</a>
+                        </div>
+                        <div>
+                            <button type="button" role="button" aria-pressed="true" class="btn-close fs-5"
+                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nav>
     </section>
 
+    <section>
     <section>
         <div id="owl-demo" class="owl-carousel owl-theme sm-d-none">
 
@@ -233,31 +276,65 @@
             <div class="item">
                 <div class="main-wrapper w-100 h-580">
                     <div class="row">
-                        <div class="blue-bg1 col-12 col-xl-9">
+                        <div class="sky-blue-bg col-12 col-xl-9" style="height: 472px;border-radius:0px 50px 0px 0px;">
                             <div class="container sm-pl-65">
                                 <h2 class="main-head fw-bold col-xl-9 text-white">NATIONAL URBAN LEARNING PLATFORM</h2>
-                                <h4 class="col-xl-9 s-head text-white">
-                                    <span> Launch of e-learning module on the 'Transforming Urban
-                                        Governance through Innovative
-                                        Ecosystem Approaches'</span>
+                                <h4 class="col-xl-9 text-white">
+                                    Launched on 8th January 2025, the second cycle of the अrban Learnathon
+                                    seeks entries from state/city officials,academic institutions and industry
+                                    partners
+
+
                                 </h4>
                                 <div class="d-flex align-items-center gap-3">
                                     <div class="mt-3 text-white">
                                         <a class="needHelp_Btn text-decoration-none" target="_blank"
-                                            href="https://helpdesknulp.niua.org/public">Need Help</a>
+                                            href="/learnathon.html">Know More</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-photo bgThird-photo d-none d-xl-block">
-                            <img src="images/NULP_Banner_ISCFP.png" alt="banner" class="w-562">
+                        <div class="bg-photo bgFirst-photo d-none d-xl-block">
+                            <img src="images/slides/slider1.png" alt="banner" class="w-562">
                         </div>
                         <div class="behind-photo d-none d-xl-block"></div>
                     </div>
 
                 </div>
             </div>
+            
             <div class="item">
+                <div class="main-wrapper w-100 h-580">
+                    <div class="row">
+                        <div class="orange-bg col-12 col-xl-9" style="height: 472px;border-radius:0px 50px 0px 0px;">
+                            <div class="container sm-pl-65">
+                                <h2 class="main-head fw-bold col-xl-9 text-white">NATIONAL URBAN LEARNING PLATFORM</h2>
+                                <h4 class="col-xl-9 s-head text-white">
+                                    NIUA in Collaboration with the MoHUA is organising the event <strong>'capacity for
+                                        change:</strong> Forging Sustainable Futures' on <strong>8th January
+                                        2025</strong> at the <strong>India Habitat Center, New Delhi</strong>
+                                    NIUA in Collaboration with the MoHUA is organising the event <strong>'capacity for
+                                        change:</strong> Forging Sustainable Futures' on <strong>8th January
+                                        2025</strong> at the <strong>India Habitat Center, New Delhi</strong>
+                                </h4>
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="mt-3 text-white">
+                                        <a class="needHelp_Btn text-decoration-none" target="_blank"
+                                            href="https://niua.in/capacity-for-change">Register here</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-photo bgThird-photo d-none d-xl-block">
+                            <img src="images/Banner_C4C Event.png" alt="banner" class="w-562">
+                            <img src="images/Banner_C4C Event.png" alt="banner" class="w-562">
+                        </div>
+                        <div class="behind-photo d-none d-xl-block"></div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- <div class="item">
                 <div class="main-wrapper w-100 h-580">
                     <div class="row">
                         <div class="green-bg1 col-12 col-xl-9">
@@ -289,8 +366,8 @@
                     </div>
 
                 </div>
-            </div>
-            <div class="item">
+            </div> -->
+            <!-- <div class="item">
                 <div class="main-wrapper w-100 h-580">
                     <div class="row">
                         <div class="red-bg col-12 col-xl-9">
@@ -324,7 +401,7 @@
                     </div>
 
                 </div>
-            </div>
+            </div> -->
 
             <div class="item">
                 <div class="main-wrapper w-100 h-580">
@@ -470,11 +547,11 @@
                 <div class="row row-cols-lg-2 align-items-center justify-content-between">
                     <div class="offer-items pt-4 pt-lg-0 row row-cols-2 row-cols-md-2 row-cols-lg-3 font-600">
                         <div class="single-item text-center">
-                            <div class="display-4">15</div>
+                            <div class="display-4">10</div>
                             <p>Domains</p>
                         </div>
                         <div class="single-item text-center">
-                            <div class="display-4">81</div>
+                            <div class="display-4">114</div>
                             <p>Courses</p>
                         </div>
                         <div class="single-item text-center">
@@ -493,7 +570,7 @@
                             </div>
                         </div>
                         <div class="single-item text-center">
-                            <div class="display-4">68</h1>
+                            <div class="display-4">70</h1>
                                 <p class="font-600">Knowledge Partners
                             </div>
                         </div>
@@ -510,9 +587,9 @@
                         <div
                             class=" work_img_wrapper work_img_wrapper_1 d-flex justify-content-center align-items-center">
                             <iframe class="w-100 h-100 br-15"
-                                src="https://www.youtube.com/embed/41wKpmQomaY?si=Fs2hwnkJ3bokbmuf"
+                                src="https://www.youtube.com/embed/e8ZqwW1jKJM?si=xWRGCTf86qSixT7K"
                                 title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen></iframe>
                         </div>
                         <div class=" work_img_wrapper work_img_wrapper_2"></div>
