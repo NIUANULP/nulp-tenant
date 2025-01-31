@@ -107,7 +107,7 @@
               <a class="item item-hover" href="Urban_Mobility.html">Transport and Mobility</a>
               <a class="item item-hover" href="./Town_Planning.html">Urban Planning & Housing</a>
               <a class="item item-hover" href="wash.html">Wash</a>
-              <a class="item item-hover" href="miscellaneous_others.html">Miscellaneous / Others</a>
+              <!-- <a class="item item-hover" href="miscellaneous_others.html">Miscellaneous / Others</a> -->
             </div>
           </div>
         </div>
@@ -185,7 +185,7 @@
 
   <div class="total-section">
     <div>
-      <div id="total" class="number">57</div>
+      <div id="total" class="number">100</div>
       <div class="num-cont">Total Registrations</div>
     </div>
     <div>
@@ -510,9 +510,9 @@
           <div class="item ">
             <div class="first-slide slider-img10">
               <div class="btn-fixed">
-                <a href="./miscellaneous_others.html" class="slider-btn">
+                <!-- <a href="./miscellaneous_others.html" class="slider-btn">
                   Miscellaneous / Others
-                </a>
+                </a> -->
               </div>
             </div>
           </div>
@@ -808,7 +808,8 @@
 
         // ({cityCount,groupCategoryCount,individualCategoryCount,institutionCount,totalCount} = data.result.data.liveLearnCounts[0]);
 
-        document.querySelector("#total").innerText = data.result.data - 10; //until we block test users we are minusing test user count approximatly 10
+        document.querySelector("#total").innerText = data.result.data - 10;
+        document.getElementById("#total").innerText=data.result.data; //until we block test users we are minusing test user count approximatly 10
         // document.querySelector("#individual").innerText = individualCategoryCount;
         // document.querySelector("#institution").innerText = institutionCount;
         // document.querySelector("#cities").innerText = cityCount;
