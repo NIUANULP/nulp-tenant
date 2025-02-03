@@ -788,7 +788,7 @@
       })
     })
   </script>
-  <script>
+  <!-- <script>
     // fetch("/counts")
     //   .then((response) => response.json())
     //   .then((data) => {
@@ -814,7 +814,26 @@
         // document.querySelector("#institution").innerText = institutionCount;
         // document.querySelector("#cities").innerText = cityCount;
       })
+  </script> -->
+
+  <script>
+    function updateRegistrationCount() {
+      fetch("/newRegistrations")
+        .then(response => response.json())
+        .then(data => {
+          console.log("Updated Registration Count:", data);
+          let registrationElement = document.getElementById("total");
+          
+          if (registrationElement && data.result && data.result.data) {
+            registrationElement.innerText = data.result.data;
+          }
+        })
+        .catch(error => console.error("Error fetching registration count:", error));
+    }
+    setInterval(updateRegistrationCount, 10000);
+    document.addEventListener("DOMContentLoaded", updateRegistrationCount);
   </script>
+  
 
 </body>
 
