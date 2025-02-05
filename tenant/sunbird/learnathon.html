@@ -815,24 +815,26 @@
         // document.querySelector("#cities").innerText = cityCount;
       })
   </script> -->
-
   <script>
-    function updateRegistrationCount() {
-      fetch("/newRegistrations")
-        .then(response => response.json())
-        .then(data => {
-          console.log("Updated Registration Count:", data);
-          let registrationElement = document.getElementById("total");
-          
-          if (registrationElement && data.result && data.result.data) {
-            registrationElement.innerText = data.result.data;
-          }
-        })
-        .catch(error => console.error("Error fetching registration count:", error));
+    function updateTotalRegistrations() {
+        $.ajax({
+            url: window.location.origin + '/learnathon/get/creators', 
+            type: "GET",
+            processData: false,
+            contentType: 'application/json',
+            success: function (response) {
+                console.log("API Response:", response);
+                let totalCount = response.result.totalCount; 
+                document.getElementById("total").innerHTML = totalCount;
+            },
+            error: function (error) {
+                console.error("Error fetching data:", error);
+            }
+        });
     }
-    setInterval(updateRegistrationCount, 10000);
-    document.addEventListener("DOMContentLoaded", updateRegistrationCount);
-  </script>
+    updateTotalRegistrations();
+    setInterval(updateTotalRegistrations, 10000);
+</script>
   
 
 </body>
