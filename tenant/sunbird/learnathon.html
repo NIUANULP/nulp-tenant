@@ -185,23 +185,23 @@
 
   <div class="total-section">
     <div>
-      <div id="total" class="number">178</div>
+      <div id="total" class="number">193</div>
       <div class="num-cont">Total Registrations</div>
     </div>
     <div>
-      <div class="number" id=voteCount>3</div>
+      <div class="number" id=voteCount>14</div>
       <div class="num-cont">States</div>
     </div>
     <div>
-      <div class="number" id=voteCount>11</div>
+      <div class="number" id=voteCount>29</div>
       <div class="num-cont">Cities</div>
     </div>
     <div>
-      <div class="number">21</div>
+      <div class="number">66</div>
       <div class="num-cont">Institutions</div>
     </div>
     <div>
-      <div class="number">10</div>
+      <div class="number">22</div>
       <div class="num-cont">Industries</div>
     </div>
 
@@ -815,24 +815,26 @@
         // document.querySelector("#cities").innerText = cityCount;
       })
   </script> -->
-
   <script>
-    function updateRegistrationCount() {
-      fetch("/newRegistrations")
-        .then(response => response.json())
-        .then(data => {
-          console.log("Updated Registration Count:", data);
-          let registrationElement = document.getElementById("total");
-          
-          if (registrationElement && data.result && data.result.data) {
-            registrationElement.innerText = data.result.data;
-          }
-        })
-        .catch(error => console.error("Error fetching registration count:", error));
+    function updateTotalRegistrations() {
+        $.ajax({
+            url: window.location.origin + '/learnathon/get/creators', 
+            type: "GET",
+            processData: false,
+            contentType: 'application/json',
+            success: function (response) {
+                console.log("API Response:", response);
+                let totalCount = response.result.totalCount; 
+                document.getElementById("total").innerHTML = totalCount;
+            },
+            error: function (error) {
+                console.error("Error fetching data:", error);
+            }
+        });
     }
-    setInterval(updateRegistrationCount, 10000);
-    document.addEventListener("DOMContentLoaded", updateRegistrationCount);
-  </script>
+    updateTotalRegistrations();
+    setInterval(updateTotalRegistrations, 10000);
+</script>
   
 
 </body>
