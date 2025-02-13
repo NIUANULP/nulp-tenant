@@ -189,19 +189,19 @@
       <div class="num-cont">Total Registrations</div>
     </div>
     <div>
-      <div class="number" id=voteCount>14</div>
+      <div class="number" id="stateCount">0</div>
       <div class="num-cont">States</div>
     </div>
     <div>
-      <div class="number" id=voteCount>29</div>
+      <div class="number" id="cityCount">0</div>
       <div class="num-cont">Cities</div>
     </div>
     <div>
-      <div class="number">66</div>
+      <div class="number" id="institutionCount">0</div>
       <div class="num-cont">Institutions</div>
     </div>
     <div>
-      <div class="number">22</div>
+      <div class="number" id="industryCount">0</div>
       <div class="num-cont">Industries</div>
     </div>
 
@@ -825,7 +825,18 @@
             success: function (response) {
                 console.log("API Response:", response);
                 let totalCount = response.result.totalCount; 
-                document.getElementById("totalCount").innerHTML =response.result.totalCount;
+                let stateCount = response.result.stateCount;
+                let cityCount = response.result.cityCount;
+                let institutionCount = response.result.institutionCount;
+                let industriesCount = response.result.industriesCount;
+
+              
+                document.getElementById("totalCount").innerHTML = totalCount;
+                document.getElementById("stateCount").innerHTML = stateCount;
+                document.getElementById("cityCount").innerHTML = cityCount;
+                document.getElementById("institutionCount").innerHTML = institutionCount;
+                document.getElementById("industriesCount").innerHTML = industriesCount;
+
             },
             error: function (error) {
                 console.error("Error fetching data:", error);
