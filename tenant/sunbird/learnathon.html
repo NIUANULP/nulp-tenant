@@ -185,7 +185,7 @@
 
   <div class="total-section">
     <div>
-      <div id="totalCount" class="number">0</div>
+      <div id="total" class="number">193</div>
       <div class="num-cont">Total Registrations</div>
     </div>
     <div>
@@ -818,14 +818,14 @@
   <script>
     function updateTotalRegistrations() {
         $.ajax({
-            url: window.location.origin + '/get/creators', 
+            url: window.location.origin + '/learnathon/get/creators', 
             type: "GET",
             processData: false,
             contentType: 'application/json',
             success: function (response) {
                 console.log("API Response:", response);
                 let totalCount = response.result.totalCount; 
-                document.getElementById("totalCount").innerHTML =response.result.totalCount;
+                document.getElementById("total").innerHTML = totalCount;
             },
             error: function (error) {
                 console.error("Error fetching data:", error);
