@@ -1989,6 +1989,7 @@ section img {
     gap: 60px;
     flex-wrap: wrap;
     margin: 75px 0;
+    width: 100%;
 }
 
 .sb-social1 {
@@ -2022,6 +2023,17 @@ section img {
     left: 0px;
     background: #011F5B;
     margin-top: 89px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.important-date h3 {
+    background-color: #EDCD88;
+    padding: 5px;
+    text-align: center;
+    width: fit-content;
 }
 
 .imp-tit {
