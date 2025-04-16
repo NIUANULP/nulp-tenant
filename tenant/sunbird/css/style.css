@@ -218,6 +218,8 @@ body {
     font-size: 16px;
     text-decoration: none;
     color: black;
+    padding: 0 20px;
+    margin: 4px;
 }
 
 .navItems-menu a {
@@ -234,14 +236,6 @@ body {
 
 .nav_img {
     width: max-content;
-}
-
-@media (min-width:1400px) {
-    .navItems a {
-        font-size: 1rem;
-        padding: 0 20px;
-
-    }
 }
 
 .navItems a:hover {
@@ -1057,7 +1051,7 @@ body {
 @media (min-width:1200px) {}
 
 .navBtn.rounded-pill {
-    padding: 10px 16px;
+    padding: 8px 17px;
 }
 
 .fa-search {
