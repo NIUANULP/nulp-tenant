@@ -1055,9 +1055,6 @@ body {
   margin: 0 16px;
 }
 
-@media (min-width: 1200px) {
-}
-
 .navBtn.rounded-pill {
   padding: 8px 17px;
 }
