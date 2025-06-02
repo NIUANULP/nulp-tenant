@@ -17,9 +17,9 @@ $(document).ready(function () {
       history.pushState(
         { globalSearchQuery: searchQuery }, // State object
         "", // Title (not commonly used)
-        "/webapp/contentList" // URL to navigate to
+        `/webapp?query=${searchQuery}` // URL to navigate to
       );
-      location.href = "/webapp/contentList"; // Redirect to the new page
+      location.href = `/webapp?query=${searchQuery}`; // Redirect to the new page
     }
   });
   $("#site-search-1").on("keypress", function (event) {
@@ -38,9 +38,9 @@ $(document).ready(function () {
       history.pushState(
         { globalSearchQuery: searchQuery }, // State object
         "", // Title (not commonly used)
-        "/webapp/contentList" // URL to navigate to
+        `/webapp?query=${searchQuery}` // URL to navigate to
       );
-      location.href = "/webapp/contentList"; // Redirect to the new page
+      location.href = `/webapp?query=${searchQuery}`; // Redirect to the new page
     }
   });
 });
