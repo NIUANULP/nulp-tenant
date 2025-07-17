@@ -1921,3 +1921,25 @@ ul {
   opacity: 0.7;
   font-weight: 500;
 }
+
+.copyright-text {
+  display: none!important;
+}
+
+.second-panel {
+background-color: #008acf !important;
+}
+
+.btn-reset-all {
+  background-color: #004367 !important;
+  color:#ffffff !important;
+
+}
+
+.reset-icon {
+  background-color: #ffffff !important;
+}
+
+.uw-widget-custom-trigger{
+  background-color: #004367 !important;
+}
